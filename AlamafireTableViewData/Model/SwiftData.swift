@@ -16,5 +16,11 @@ struct DEW: Decodable {
     let dew_point: Double?
     let pressure: Int?
     
+    let weather: [WETH]
+    
 }
 
+
+struct WETH: Decodable {
+    let main: String?
+}

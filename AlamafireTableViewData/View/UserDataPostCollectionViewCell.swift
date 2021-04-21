@@ -12,4 +12,6 @@ class UserDataPostCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var nameUser: UILabel!
     @IBOutlet weak var emailUser: UILabel!
+    @IBOutlet weak var descriptionUser: UILabel!
+    
 }

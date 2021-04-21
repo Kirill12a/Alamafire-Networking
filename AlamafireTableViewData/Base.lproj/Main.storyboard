@@ -48,7 +48,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OwJ-J5-9bd">
-                                            <rect key="frame" x="39" y="9" width="83" height="73"/>
+                                            <rect key="frame" x="39" y="9" width="83" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oss-KR-o8u">
@@ -65,11 +65,19 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hg-fC-c6V">
+                                            <rect key="frame" x="59" y="60" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.97254901959999995" green="0.80392156859999997" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="161" height="187"/>
                                 <connections>
+                                    <outlet property="descriptionUser" destination="5Hg-fC-c6V" id="8y5-BU-qhk"/>
                                     <outlet property="emailUser" destination="oss-KR-o8u" id="hFJ-Ku-O7g"/>
                                     <outlet property="imageUser" destination="OwJ-J5-9bd" id="qIU-OL-iA8"/>
                                     <outlet property="nameUser" destination="hUh-nD-u64" id="Ux3-da-XZR"/>
