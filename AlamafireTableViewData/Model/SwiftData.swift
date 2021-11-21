@@ -15,11 +15,16 @@ struct WeathersApi: Decodable {
 struct DEW: Decodable {
     let dew_point: Double?
     let pressure: Int?
+    let wind_speed: Double?
     
+  
+     //MARK: Тоже самое что и ниже
     let weather: [WETH]
     
 }
 
+
+ //MARK: Нужно переработать
 
 struct WETH: Decodable {
     let main: String?

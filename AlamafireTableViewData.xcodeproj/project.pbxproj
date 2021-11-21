@@ -16,6 +16,7 @@
 		D242AA71262E14D400F8FB18 /* UsersMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D242AA70262E14D400F8FB18 /* UsersMainCollectionViewController.swift */; };
 		D242AA74262E152200F8FB18 /* UserDataPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D242AA73262E152200F8FB18 /* UserDataPostCollectionViewCell.swift */; };
 		D242AA77262E153500F8FB18 /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D242AA76262E153500F8FB18 /* SwiftData.swift */; };
+		D263006C2630B44A00C2E800 /* WeatherDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263006B2630B44A00C2E800 /* WeatherDelegateViewController.swift */; };
 		D810F4C41B94BA3E2EC4557B /* Pods_AlamafireTableViewData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C40307E16B96913D83DE4F2 /* Pods_AlamafireTableViewData.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		D242AA70262E14D400F8FB18 /* UsersMainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMainCollectionViewController.swift; sourceTree = "<group>"; };
 		D242AA73262E152200F8FB18 /* UserDataPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataPostCollectionViewCell.swift; sourceTree = "<group>"; };
 		D242AA76262E153500F8FB18 /* SwiftData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftData.swift; sourceTree = "<group>"; };
+		D263006B2630B44A00C2E800 /* WeatherDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D242AA7B262E158B00F8FB18 /* Controller */,
 				D242AA5A262E081300F8FB18 /* ViewController.swift */,
 				D242AA5C262E081300F8FB18 /* Main.storyboard */,
+				D263006B2630B44A00C2E800 /* WeatherDelegateViewController.swift */,
 				D242AA5F262E081800F8FB18 /* Assets.xcassets */,
 				D242AA61262E081800F8FB18 /* LaunchScreen.storyboard */,
 				D242AA64262E081800F8FB18 /* Info.plist */,
@@ -242,6 +245,7 @@
 				D242AA77262E153500F8FB18 /* SwiftData.swift in Sources */,
 				D242AA71262E14D400F8FB18 /* UsersMainCollectionViewController.swift in Sources */,
 				D242AA5B262E081300F8FB18 /* ViewController.swift in Sources */,
+				D263006C2630B44A00C2E800 /* WeatherDelegateViewController.swift in Sources */,
 				D242AA57262E081300F8FB18 /* AppDelegate.swift in Sources */,
 				D242AA59262E081300F8FB18 /* SceneDelegate.swift in Sources */,
 			);

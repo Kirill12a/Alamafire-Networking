@@ -14,6 +14,8 @@ class UsersMainCollectionViewController: UICollectionViewController {
     
     var weathersDEW = [DEW]()
     var weathersName = [WETH]()
+    
+    var presureTE = ["Нормуль","Отлично","Так себе","Плохое","Отлично","Очень хорошо","Ну так себе","Очень плохо"]
     private let KeyWeatherData = "04058a1cfb3995f113f971c8390a19ae"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,8 @@ class UsersMainCollectionViewController: UICollectionViewController {
         
         cell.nameUser.text = String(weathersDEW[indexPath.row].dew_point!)
         cell.emailUser.text = String(weathersDEW[indexPath.row].pressure!)
+        cell.descriptionUser.text =  String(weathersDEW[indexPath.row].wind_speed!)
+//        cell.descriptionUser.text = presureTE[indexPath.row]
         
 //        cell.descriptionUser.text = String(weatherName[indexPath.row].description!)
     
@@ -44,8 +48,9 @@ class UsersMainCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    /// Add request data base
     func updateTableView(){
-        AF.request("https://api.openweathermap.org/data/2.5/onecall?lat=55.75&lon=37.61&exclude=minutely,hourly,alerts,current&appid=\(KeyWeatherData.self)&lang=ru&units=metric")
+        AF.request("https://api.openweathermap.org/data/2.5/onecall?lat=56.75&lon=38.61&exclude=minutely,hourly,alerts,current&appid=\(KeyWeatherData.self)&lang=ru&units=metric")
             .validate()
             .responseDecodable(of: WeathersApi.self) { (response) in
                 guard let weth = response.value else {print("что то не так")
@@ -61,7 +66,16 @@ class UsersMainCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("GGG")
+        
+        print("ВЫ нажали на \(weathersDEW[indexPath.row].dew_point!) и давление тут равно \(presureTE[indexPath.row]), и ветер \(weathersDEW[indexPath.row].wind_speed!)")
+        let vcDES = storyboard?.instantiateViewController(identifier: "WeatherDelegateViewController") as? WeatherDelegateViewController
+        DispatchQueue.main.async {
+            vcDES?.weaterfds = Double(self.weathersDEW[indexPath.row].dew_point!)
+        
+            vcDES?.presuereText = String(self.presureTE[indexPath.row])
+        
+        self.navigationController?.pushViewController(vcDES!, animated: true)
+        }
     }
   
 

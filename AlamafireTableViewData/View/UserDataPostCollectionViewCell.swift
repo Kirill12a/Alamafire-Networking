@@ -1,7 +1,4 @@
-//
-//  UserDataPostCollectionViewCell.swift
-//  AlamafireTableViewData
-//
+
 //  Created by Kirill Drozdov on 19.04.2021.
 //
 
